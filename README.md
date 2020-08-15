@@ -1,3 +1,3 @@
-#Base Apparel comming soon
+##Base Apparel comming soon
 
 A coming soon splash page for Base Apparel
