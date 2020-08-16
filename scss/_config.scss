@@ -1,0 +1,15 @@
+
+:root {
+        font-size: 10px;
+    }
+    
+    *, *::before, *::after {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        z-index: 0;
+        box-sizing: border-box;
+    } 
