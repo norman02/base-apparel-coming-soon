@@ -13,4 +13,19 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Noto Serif SC', serif;
+  color: #ce9898;
+}
+
+body h1, body h2 {
+  font-family: 'DM Sans', sans-serif;
+}
+
+body h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
 /*# sourceMappingURL=main.css.map */

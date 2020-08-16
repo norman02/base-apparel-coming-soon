@@ -1,6 +1,22 @@
 @import "./config";
 
-$gradiant: linear-gradient(#f8bfbf, #ee8b8b);
-$secondary-color: #423a3a;
-$primary-color: #ce9898;
-$tertiary-color: #ee8b8b;
+
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Noto Serif SC', serif;
+    color: $primary-color;
+
+    h1, h2 {
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 400;    
+    }
+
+    h2 {
+        
+    }
+}
