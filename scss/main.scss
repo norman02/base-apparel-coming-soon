@@ -70,6 +70,8 @@
         
         button{
             position: absolute;
+            border: none;
+            outline: none;
             color: #fff;
             background: $button-gradient;
             font-size: 3.6rem;
@@ -81,6 +83,26 @@
             &:hover {
                 cursor: pointer;
             }
+        }
+
+        .warning-icon {
+            visibility: hidden;
+            position: absolute;
+            right: 15rem;
+            margin-top: 1rem;
+            font-size: 4rem;
+            color: red;
+        }
+        .warning-msg {
+            visibility: hidden;
+            z-index: 2;
+            font-size: 1.3rem;
+            color: red;
+            margin-top: -0.6rem;
+            text-align: center;
+        }
+        .error {
+            visibility: visible;
         }
     }
 }

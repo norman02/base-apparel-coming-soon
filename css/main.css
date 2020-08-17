@@ -104,6 +104,8 @@
 
 .main__call-to-action button {
   position: absolute;
+  border: none;
+  outline: none;
   color: #fff;
   background: -webkit-gradient(linear, left top, right top, color-stop(5%, #f8bfbf), color-stop(95%, #ee8b8b));
   background: linear-gradient(to right, #f8bfbf 5%, #ee8b8b 95%);
@@ -117,5 +119,27 @@
 
 .main__call-to-action button:hover {
   cursor: pointer;
+}
+
+.main__call-to-action .warning-icon {
+  visibility: hidden;
+  position: absolute;
+  right: 15rem;
+  margin-top: 1rem;
+  font-size: 4rem;
+  color: red;
+}
+
+.main__call-to-action .warning-msg {
+  visibility: hidden;
+  z-index: 2;
+  font-size: 1.3rem;
+  color: red;
+  margin-top: -0.6rem;
+  text-align: center;
+}
+
+.main__call-to-action .error {
+  visibility: visible;
 }
 /*# sourceMappingURL=main.css.map */
