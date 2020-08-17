@@ -71,6 +71,7 @@
 
 .main__call-to-action input {
   position: relative;
+  display: inline-block;
   width: 100%;
   background: transparent;
   border: 2px solid #ce9898;
@@ -110,9 +111,9 @@
   background: -webkit-gradient(linear, left top, right top, color-stop(5%, #f8bfbf), color-stop(95%, #ee8b8b));
   background: linear-gradient(to right, #f8bfbf 5%, #ee8b8b 95%);
   font-size: 3.6rem;
-  padding: .8rem 3.2rem;
+  padding: .78rem 3rem;
   border-radius: 20rem;
-  right: 4.2rem;
+  right: 4.4rem;
   -webkit-box-shadow: 2px 6px 12px 2px #ce9898;
           box-shadow: 2px 6px 12px 2px #ce9898;
 }
@@ -136,10 +137,12 @@
   font-size: 1.3rem;
   color: red;
   margin-top: -0.6rem;
-  text-align: center;
+  margin-left: 5rem;
+  text-align: left;
 }
 
 .main__call-to-action .error {
   visibility: visible;
+  border-color: red;
 }
 /*# sourceMappingURL=main.css.map */
