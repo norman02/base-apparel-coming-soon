@@ -166,11 +166,19 @@ body {
 
 @media screen and (min-width: 768px) {
   .main__text h1, .main__text h2 {
-    font-size: 6rem;
+    font-size: 6.5rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .head {
+    background-color: transparent;
+    margin-top: 6.5rem;
+    margin-left: 16.5rem;
+  }
+  .head__img {
+    width: 16rem;
+  }
   .main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -179,6 +187,17 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .main__portrait {
+    height: 100vh;
+    background-image: url("../img/main-image-desktop.png");
+  }
+  .main__text {
+    margin: 23.5rem 30rem 0 16.5rem;
+    text-align: left;
   }
 }
 /*# sourceMappingURL=main.css.map */
