@@ -49,8 +49,11 @@ body {
         font-weight: 400;
     }
 
-    &__img {
-        width: 100vw;
+    &__portrait {
+        height: 32vh;
+        width: 100%;
+        background: url('../img/main-image.png') no-repeat;
+        background-size: cover;
     }
 
     &__text {
@@ -59,17 +62,20 @@ body {
     }
 
     &__call-to-action {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
         margin-top: 4rem;
         opacity: 50%;
         
         input {
-            position: relative;
             display: inline-block;
             width: 100%;
             background: transparent;
             border: 2px solid $primary-color;
             outline: none;
             padding: 2rem;
+            height: 6rem;
             border-radius: 20rem;
         &::placeholder {
             color: $primary-color;
@@ -79,16 +85,18 @@ body {
         }
         
         button{
-            position: absolute;
             border: none;
             outline: none;
             color: #fff;
             background: $button-gradient;
+            height: 5.8rem;
             font-size: 3.6rem;
             padding: .78rem 3rem;
             border-radius: 20rem;
-            right: 4.4rem;
             box-shadow: 2px 6px 12px 2px $primary-color;
+            width: 8rem;
+            margin-left: -2.2rem;
+            margin-top: -6rem;
            
             &:hover {
                 cursor: pointer;
@@ -126,5 +134,12 @@ body {
                 font-size: 6rem;
             }
         }
+    }
+}
+
+@include media-lg {
+    .main {
+        display: flex;
+        flex-direction: row-reverse;
     }
 }

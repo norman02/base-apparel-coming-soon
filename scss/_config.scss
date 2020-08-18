@@ -24,7 +24,7 @@ $tertiary-color: #ee8b8b;
 }
 
 @mixin media-lg {
-    @media screen and (min-width: 1024) {
+    @media screen and (min-width: 1024px) {
         @content;
     }
 }
