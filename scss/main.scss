@@ -8,22 +8,30 @@
     }
 }
 
-.main {
+html {
+    height: 100%;
+    
+}
+
+body {
+    width: 100%;
+    background: $main-gradient fixed;
     font-size: 1.6rem;
+}
+
+.main {
+    
     font-family: 'DM Sans', sans-serif;
     color: $primary-color;
     text-align: center;
-    width: 100vw;
-    height: 100vh;
-    background: $main-gradient;
+    
 
-    h1, h2 {
-        
+   h1, h2 {     
         text-transform: uppercase;
         font-size: 4rem;
     }
 
-    h1 {
+    h1{
         font-weight: 400;  
         letter-spacing: 1.6rem;  
     }
@@ -41,8 +49,11 @@
         font-weight: 400;
     }
 
-    &__img {
-        width: 100vw;
+    &__portrait {
+        height: 32vh;
+        width: 100%;
+        background: url('../img/main-image.png') no-repeat;
+        background-size: cover;
     }
 
     &__text {
@@ -51,16 +62,20 @@
     }
 
     &__call-to-action {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
         margin-top: 4rem;
         opacity: 50%;
         
         input {
-            position: relative;
             display: inline-block;
             width: 100%;
             background: transparent;
             border: 2px solid $primary-color;
+            outline: none;
             padding: 2rem;
+            height: 6rem;
             border-radius: 20rem;
         &::placeholder {
             color: $primary-color;
@@ -70,16 +85,18 @@
         }
         
         button{
-            position: absolute;
             border: none;
             outline: none;
             color: #fff;
             background: $button-gradient;
+            height: 5.8rem;
             font-size: 3.6rem;
             padding: .78rem 3rem;
             border-radius: 20rem;
-            right: 4.4rem;
             box-shadow: 2px 6px 12px 2px $primary-color;
+            width: 8rem;
+            margin-left: -2.2rem;
+            margin-top: -6rem;
            
             &:hover {
                 cursor: pointer;
@@ -90,7 +107,7 @@
             visibility: hidden;
             position: absolute;
             right: 15rem;
-            margin-top: 1rem;
+            margin: 0.5rem;
             font-size: 4rem;
             color: red;
         }
@@ -106,6 +123,47 @@
         .error {
             visibility: visible;
             border-color: red;
+        }
+    }
+}
+
+@include media-md {
+    .main {
+        &__text{
+            h1, h2 {
+                font-size: 6.5rem;
+            }
+        }
+    }
+}
+
+@include media-lg {
+    .head {
+        background-color: transparent;
+        margin-top: 6.5rem;
+        margin-left: 16.5rem;
+
+        &__img {
+            width: 16rem;
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row-reverse;
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+
+        &__portrait {
+            height: 100vh;
+            background-image: url('../img/main-image-desktop.png');
+        }
+
+        &__text {
+            margin: 23.5rem 30rem 0 16.5rem;
+            text-align: left;
         }
     }
 }
