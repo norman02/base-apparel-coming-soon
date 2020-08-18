@@ -1,7 +1,7 @@
 
 
 $button-gradient: linear-gradient( to right, #f8bfbf 5%, #ee8b8b 95%);
-$main-gradient: linear-gradient( to bottom ,#FFFFFF, #FFF4F4 90%);
+$main-gradient: linear-gradient( to bottom ,#FFFFFF , #FFF4F4);
 $secondary-color: #423a3a;
 $primary-color: #ce9898;
 $tertiary-color: #ee8b8b;
@@ -10,13 +10,27 @@ $tertiary-color: #ee8b8b;
         font-size: 10px;
     }
     
-    *, *::before, *::after {
+    * {
         margin: 0;
         padding: 0;
         border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-        z-index: 0;
         box-sizing: border-box;
     } 
+
+@mixin media-md {
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
