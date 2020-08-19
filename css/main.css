@@ -174,10 +174,10 @@ body {
   .head {
     background-color: transparent;
     margin-top: 6.5rem;
-    margin-left: 16.5rem;
   }
   .head__img {
     width: 16rem;
+    margin-left: 16.5rem;
   }
   .main {
     display: -webkit-box;
@@ -198,6 +198,26 @@ body {
   .main__text {
     margin: 23.5rem 30rem 0 16.5rem;
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-width: 1600px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main {
+    position: relative;
+    width: 1500px;
+    margin: auto;
+  }
+  .head {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
